@@ -1,10 +1,15 @@
+class Square {
+    color: string
+    area: number
+}
+
 interface SquareConfig {
     color?: string;
     width?: number;
 }
 
-function createSquare(config: SquareConfig): { color: string; area: number; foo: string } {
-    let newSquare = { color: "white", area: 100 };
+function createSquare(config: SquareConfig): Square {
+    let newSquare: Square = { color: "white", area: 100 }
     if (config.color) {
         newSquare.color = config.color;
     }
@@ -12,11 +17,10 @@ function createSquare(config: SquareConfig): { color: string; area: number; foo:
         newSquare.area = config.width * config.width;
     }
 
-    let newSquare2 = { foo: "barBar", ...newSquare }
-
-    return newSquare2;
+    return newSquare;
 }
 
 let mySquare = createSquare({ color: "black" });
 
-console.log(mySquare)
+
+console.log(mySquare);

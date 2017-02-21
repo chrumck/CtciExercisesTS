@@ -1,0 +1,31 @@
+{
+  "name": "ctciexercises",
+  "version": "1.0.0",
+  "description": "Cracking the Coding Interview exercises in TS/JS version.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^3.4.35",
+    "@types/mocha": "^2.2.39",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "ts-node": "^2.1.0"
+  },
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrumck/CtciExercisesTS.git"
+  },
+  "author": "Tomasz Dobrowolski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrumck/CtciExercisesTS/issues"
+  },
+  "homepage": "https://github.com/chrumck/CtciExercisesTS#readme",
+  "private": true
+}

@@ -1,6 +1,9 @@
 import { Comparable } from "./Comparable";
 
-// TODO: add testing. Read how to document TS code and addd the member docs.
+/**
+ * Sorts the given data with insertion sort algorithm.
+ * @param {Comparable<T>[]} data - The data to sort.
+ */
 export function insertionSort<T>(data: Comparable<T>[]) {
    for (let i = 0; i < data.length; i++) {
       for (let j = i; j > 0; j--) {

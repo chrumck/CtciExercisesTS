@@ -20,6 +20,9 @@
          "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
          "stopOnEntry": false,
          "args": [
+            // "-r", 
+            // "ts-node/register",
+            // "test/**/*.ts",
             "--no-timeouts",
             "--colors",
             "--recursive"

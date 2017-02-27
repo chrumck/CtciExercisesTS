@@ -22,6 +22,12 @@ export function sortedMerge<T>(A: Comparable<T>[], B: Comparable<T>[]): void {
             A[i] = B[j];
             break;
          }
+
+         if (i === A.length - 1) {
+            A[i + 1] = B[j];
+            break;
+         }
+
          i++;
       }
    }

@@ -1,4 +1,4 @@
-import { Comparable } from "./Comparable"
+import { Comparable } from "./Comparable";
 
 /**
  * Merges two arrays, where the first one's buffer is large enough to accommodate the other.
